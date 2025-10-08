@@ -1,0 +1,807 @@
+<html>
+	<head>
+		<title> Bán hàng trực tuyến! </title>
+		<meta charset="UTF-8"/>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css" />					
+		<link rel="stylesheet" type="text/css" href="style2.css" />						
+		<script src="jquery-3.7.1.min.js"></script>
+		<script src="index.js"></script>
+		<link rel="icon" href="img/logo2.png" type="image/gif" sizes="16x16">
+	</head>
+	
+	<body> 
+	<div id="chatbot">
+			<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"></path><path d="M9.5 9h.01"></path><path d="M14.5 9h.01"></path><path d="M9.5 13a3.5 3.5 0 0 0 5 0"></path></svg>	
+		</div>
+		<div id="chatbot2">
+			<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M215.94,182.08A48.33,48.33,0,0,1,168,224,136,136,0,0,1,32,88,48.33,48.33,0,0,1,73.92,40.06a8,8,0,0,1,8.3,4.8l21.13,47.2a8,8,0,0,1-.66,7.53L81.32,125a7.93,7.93,0,0,0-.54,7.81c8.27,16.93,25.77,34.22,42.75,42.41a7.92,7.92,0,0,0,7.83-.59l25-21.3a8,8,0,0,1,7.59-.69l47.16,21.13A8,8,0,0,1,215.94,182.08Z" opacity="0.2"></path><path d="M144.27,45.93a8,8,0,0,1,9.8-5.66,86.22,86.22,0,0,1,61.66,61.66,8,8,0,0,1-5.66,9.8A8.23,8.23,0,0,1,208,112a8,8,0,0,1-7.73-5.94,70.35,70.35,0,0,0-50.33-50.33A8,8,0,0,1,144.27,45.93Zm-2.33,41.8c13.79,3.68,22.65,12.54,26.33,26.33A8,8,0,0,0,176,120a8.23,8.23,0,0,0,2.07-.27,8,8,0,0,0,5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8,8,0,1,0-4.13,15.46Zm81.94,95.35A56.26,56.26,0,0,1,168,232C88.6,232,24,167.4,24,88A56.26,56.26,0,0,1,72.92,32.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,109.39,104c-.18.27-.37.52-.57.77L88,129.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,223.88,183.08Zm-15.88-2s-.07,0-.11,0h0l-47-21.05-24.35,20.71a8.44,8.44,0,0,1-.74.56,16,16,0,0,1-15.75,1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16,16,0,0,1,1-15.7,6.13,6.13,0,0,1,.57-.77L96,95.15l-21-47a.61.61,0,0,1,0-.12A40.2,40.2,0,0,0,40,88,128.14,128.14,0,0,0,168,216,40.21,40.21,0,0,0,208,181.07Z"></path></svg>	
+		</div>
+		<div id="header1">
+			<div id="top1">
+				<div id="h_left">
+					<div id="left_1">
+						<div id="pic"><img class="picture" src="img/social/mail.png"/></div>
+						<div id="hello"><a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwfRSrvNjtqMMNwprHMlCDLShrrDCsqNGQzMdHSqmFnvHDQHKGxxPkLqCKrJzpxZkqlSNt">datdoo@gmail.com</a></div>
+					</div>
+					<div id="left_2">+03 52.512.556 Hỗ trợ 24/7 </div>
+				</div>
+				<div id="h_right">
+					<div id="r1">
+						<div id="social">
+							<div id="icon_social">
+								<div><a target="_blank" href="https://www.facebook.com/toladatdo"><img class="picture_s" src="img/social/pin.png"/></a></div>
+								<div><a target="_blank" href="https://www.instagram.com/d_awryn/"><img class="picture_s" src="img/social/in.png"/></a></div>
+								<div><a target="_blank" href="https://www.instagram.com/d_awryn/"><img class="picture_s" src="img/social/twitter.png"/></a></div>
+								<div><a target="_blank" href="https://www.facebook.com/toladatdo"><img class="picture_s" src="img/social/face.png"/></a></div>
+							</div>                                                        
+						</div>                                                            
+					</div>                                                                
+					<div id="r2">
+						<div id="language">
+							<div id="icon_l">
+								<div><a href="https://www.facebook.com/toladatdo"><img class="picture_l" src="img/language.jpg"/></a></div>
+								<div id="a_lang"><a href="https://www.facebook.com/toladatdo">Vietnamese</a></div>
+							</div>
+						</div></div>
+					<div id="r3">
+						<div id="login">
+							<a target="_blank" href="login.html"><img class="picture_login" src="img/login.jpg"/></a>
+							<div id="a_log"><a title="Đăng nhập để làm Dmember của DanyLap" target="_blank" href="login.html">Login</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="header">
+			<div id="top">
+				<div id="top-content">
+					<div id="top-left">
+						<a href="index.html"><img src="img/logo.png"/></a>
+					</div>
+					<div id="top-mid">
+						<div>
+						<form>
+							<input type="text" placeholder="Tìm kiếm...">
+							<button type="button">
+								<img src="img/find.jpg" alt="Tìm kiếm">
+							</button>
+						</form>						
+						</div>	
+					</div>
+					<div id="top-right">			
+						<div id="top-right-content">
+							<div id="t2">
+								<a href="giohang.html"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg></a>
+							</div>	
+						</div>
+						
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div id="menu">
+			<div id="menu-item">
+				<ul>
+				
+					<li>
+						<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
+						<ul>
+							<li><a class="me_item" href="banhangonl.html">BÁN HÀNG TRỰC TUYẾN</a></li>
+							<li><a class="me_item" href="tragop.html">MUA TRẢ GÓP</a></li>
+							<li><a class="me_item" href="#hot">SẢN PHẨM HOT</a></li>
+							<li><a class="me_item" href="#map">CHỈ ĐƯỜNG</a></li>
+							<li><a class="me_item" href="#">LÊN ĐẦU TRANG</a></li>
+							<li><a class="me_item" href="#support">XUỐNG CUỐI TRANG</a></li>
+						</ul>
+					
+					</li>
+					<li ><a class="me_item"  href="index.html">DANH MỤC SẢN PHẨM</a>
+						<ul>
+							<li><a class ="me_item"href="#1">PC Đồ Họa - WORKSTATION</a></li>
+							<li><a class ="me_item"href="#2">PC Gaming, Streaming</a></li>
+							<li><a class ="me_item"href="#3">PC Văn Phòng, AIO, Mini PC</a></li>
+							<li><a class ="me_item"href="#4">Laptop, Máy Tính Xách Tay</a></li>
+							<li><a class ="me_item"href="#5">Màn Hình</a></li>
+							<li><a class ="me_item"href="#6">Linh Kiện Máy Tính</a></li>
+							<li><a class ="me_item"href="#7">Gaming Gear</a></li>
+							<li><a class ="me_item"href="#8">Phụ Kiện Laptop, PC, Khác</a></li>
+						</ul>
+					</li>
+					<li style="background-color: #ff9300;"><a style="color: white; text-decoration: none; display: block" class="me_item" href="banhangonl.html">BÁN HÀNG TRỰC TUYẾN</a></li>
+					<li><a class="me_item" href="tragop.html">MUA TRẢ GÓP</a></li>
+					<li><a class="me_item" href="#hot">SẢN PHẨM HOT</a></li>
+					<li><a class="me_item" href="#map">CHỈ ĐƯỜNG</a></li>
+				</ul>
+			</div>
+		</div>
+		
+
+
+		<div id="container"> 
+			<div class="product">
+			<br/>
+			<br/>
+				<h2 class="product-title"><a href="index.html">TRANG CHỦ </a>➤ <a class="mucluc" href="banhangonl.html">CỬA HÀNG</a></h2>
+				<select class="sapxep">
+                    <option>Thứ tự mặc định</option>
+                    <option>Thứ tự theo mức độ phổ biến</option>
+                    <option>Thứ tự theo điểm đánh giá</option>
+                    <option>Mới nhất</option>
+                    <option>Thứ tự theo giá: thấp đến cao</option>
+                    <option>Thứ tự theo giá: cao xuống thấp</option>
+                </select>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Màn hình máy tính MSI Optix MAG322CQRV Cong 2K 144Hz" 
+								src="img/MANHINH/MSI_Optix_MAG322CQRV.png"/> <br/><br/>
+							<a class="product-name" href="MSI_Optix_MAG322CQRV.html">[New 100%] Màn hình máy tính MSI Optix MAG322CQRV...</a><br/><br/>
+							<span class="giamgia"><s>12.950.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">12.500.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Laptop Lenovo Legion Slim 7-15IMH5 (82BC005YVN) (i7 10750H/16GB RAM/512GB SSD/15.6 FHD 144hz/GTX1660TI 6G/Win/Xám)" 
+								src="img/LAPTOP/Lenovo_Legion_Slim_7-15IMH5.png"/> <br/><br/>
+							<a class="product-name" href="#">[New 100%] Laptop Lenovo Legion Slim 7-15IMH5...</a><br/><br/>
+							<span class="giamgia"><s>39.999.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">37.999.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Màn hình máy tính Dell Monitor S2421HN 23.8 Wide LED, Full HD 1920 x 1080, 2 x HDMI 1.4, 1 x 3.5mm Audio Out" 
+								src="img/MANHINH/Dell_Monitor_S2421HN_23.8_Wide_LED.png"/> <br/><br/>
+							<a class="product-name" href="#">[New 100%] Màn hình máy tính Dell Monitor S2421HN...</a><br/><br/>
+							<span class="giamgia"><s>3.908.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">3.750.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Máy chủ Dell PowerEdge T40 Tower (E-2224G / 8GB / 1TB)" 
+								src="img/DH_WORKSTATION/Dell_PowerEdge_T40.jpg"/> <br/><br/>
+							<a class="product-name" href="#">[New 100%] Máy tính chủ Dell PowerEdge T40/Intel Xeon E-...</a><br/><br/>
+							<span class="giamgia"><s>15.990.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">15.500.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Laptop Acer Aspire 5 A514 54 540F" 
+								src="img/LAPTOP/Laptop_Acer_Aspire_5_A514_54_540F.jpg"/> <br/><br/>
+							<a class="product-name" href="#">[New 100%] Laptop Acer Aspire 5 A514 54 540F</a><br/><br/>
+							<span class="giamgia"><s>17.690.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">16.490.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Laptop ASUS TUF Gaming F15 FX506LH-HN002T (i5-10300H | 8GB | 512GB | VGA GTX 1650 4GB | 15.6' FHD 144Hz | Win 10)"
+								src="img/LAPTOP/Laptop_ASUS_TUF_Gaming_F15_FX506LH_HN002T.jpg"/> <br/><br/>
+							<a class="product-name" href="#">[New 100%] Laptop ASUS TUF Gaming F15 FX50...</a><br/><br/>
+							<span class="giamgia"><s>20.490.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">19.490.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Laptop Lenovo Legion Slim 7-15IMH5 (82BC005YVN) (i7 10750H/16GB RAM/512GB SSD/15.6 FHD 144hz/GTX1660TI 6G/Win/Xám)" 
+								src="img/LAPTOP/Lenovo_Legion_Slim_7-15IMH5.png"/> <br/><br/>
+							<a class="product-name" href="#">[New 100%] Laptop Lenovo Legion Slim...</a><br/><br/>
+							<span class="giamgia"><s>39.999.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">37.999.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Laptop ASUS ZenBook UX325EA EG079T" 
+								src="img/LAPTOP/Laptop_ASUS_ZenBook_UX325EA_EG079T.jpg"/> <br/><br/>
+							<a class="product-name" href="#">[New 100%] Laptop ASUS ZenBook UX325...</a><br/><br/>
+							<span class="giamgia"><s>20.390.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">18.490.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Máy trạm Workstation Dell Precision T582042PT58DW27 Mini Tower" 
+								src="img/DH_WORKSTATION/Dell_Precision_T5820.jpg"/> <br/><br/>
+							<a class="product-name" class="product-name"href="#">[New 100%] Máy trạm Workstation Dell Precision...</a><br/><br/>
+							<span class="giamgia"><s>50.900.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">48.900.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Máy chủ HP DL20 (P06963-B21-2224-16GB-4SFF) Gen10 E2224, 4SFF, 16GB, 290W, Non HDD, 4y NBD FC" 
+								src="img/DH_WORKSTATION/HP_DL20.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Máy chủ HP DL20 (P06963-B21-2224-...</a><br/><br/>
+							<span class="giamgia"><s>34.999.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">31.999.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Máy tính chủ Dell PowerEdge T340 Server/Intel Xeon E-2234,up to 8x3.5/8GB/1TB 7.2K SATA hp hc/iDrac9Ba/H330/DVDRW/2x1GbE LOM/495W/4YrPro" 
+								src="img/DH_WORKSTATION/Dell_PowerEdge_T340_Server.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Máy tính chủ Dell PowerEdge T340 Ser...</a><br/><br/>
+							<span class="giamgia"><s>45.000.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">40.750.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Máy chủ HP MicroSvr (P19752-371) Gen10+ E-2224, 8GB, NHP Svr, 3Y NBD FC" 
+								 src="img/DH_WORKSTATION/HP_MicroSvr.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Máy chủ HP MicroSvr (P19752-371)...</a><br/><br/>
+							<span class="giamgia"><s>21.000.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">19.000.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="GVN Venus S R5 3600 SSD 120GB"
+								src="img/GAMING_STREAMING/GVN_Venus_S.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] GVN Venus S R5 3600...</a><br/><br/>
+							<span class="giamgia"><s>26.400.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">24.890.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="GVN Volibear S I7 10700F SSD 240GB" 
+								src="img/GAMING_STREAMING/GVN_Volibear_S.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] GVN Volibear S I7 10700F...</a><br/><br/>
+							<span class="giamgia"><s>32.890.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">30.490.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="GVN Hextech S I5 10400F SSD 120GB"
+								src="img/GAMING_STREAMING/GVN_Hextech_S.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] GVN Hextech S I5 10400F...</a><br/><br/>
+							<span class="giamgia"><s>23.200.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">21.700.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="PCAP Apollo R3-3100 SSD 120GB" 
+								 src="img/GAMING_STREAMING/PCAP_Apollo.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] PCAP Apollo R3-3100 SSD...</a><br/><br/>
+							<span class="giamgia"><s>17.500.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">15.999.000₫</span></div>
+						</div>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Máy tính để bàn All In One Dell Inspiron 5400 (42INAIO540001)/ Black/ Intel core i3-1115G4 ( upto 4.10GHz, 6MB)/ Ram 8GB (8GB x1) DDR4/ HDD 1TB/ Intel UHD Graphics/ 23.8 Inch FHD Non touch/ WC + WL + BT/ Wl Key + Mouse/ No DVD/ Win10SL/ 1Yr"
+								src="img/VANPHONG_AIO_MINI/Dell_Inspiron_5400.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Máy tính để bàn All In One Dell Dell Inspiron 5400...</a><br/><br/>
+							<span class="giamgia"><s>25.990.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">24.590.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Máy tính để bàn All In One Dell OptiPlex 7480/ Intel Core i5-10500T (2.30Ghz, 12MB)/ RAM 8GB (1x8GB) DDR4/ SSD 512GB/ Intel UHD Graphics/ 23.8 inch FHD Touch/ Wifi + BT + WC/ Key + Mouse/ Ubuntu/ 3Yrs" 
+								src="img/VANPHONG_AIO_MINI/Dell_OptiPlex_7480.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Máy tính để bàn All In One Dell OptiPlex 7480/...</a><br/><br/>
+							<span class="giamgia"><s>27.923.300₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">26.490.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="PC Acer Aspire XC-885 (i5-8400/4G RAM/1TB HDD/DVDRW/WL/K+M/Dos) (DT.BAQSV.002)"
+								src="img/VANPHONG_AIO_MINI/PC_Acer_Aspire_XC_885.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] PC Acer Aspire XC-885 (i5-8400/...</a><br/><br/>
+							<span class="giamgia"><s>12.000.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">11.234.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="PC Dell OptiPlex 3070 Micro (i5-9500T/4GB RAM/500GB HDD/Fedora) (42OC370003)" 
+								 src="img/VANPHONG_AIO_MINI/PC_Dell_OptiPlex_3070_Micro.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] PC Dell OptiPlex 3070 Micro (i5-9500T...</a><br/><br/>
+							<span class="giamgia"><s>12.599.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">11.299.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Laptop Apple Macbook Air MGN93 (MGN93SA/A)/ Silver/ M1 Chip/ RAM 8GB/ 256GB SSD/ 13.3 inch Retina/ Touch ID/ Mac OS/ 1 Yr"
+								src="img/LAPTOP/Laptop_Apple_Macbook_Air_MGN93.jpeg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Laptop Apple Macbook Air MGN93...</a><br/><br/>
+							<span class="giamgia"><s>28.990.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">27.590.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Laptop Asus Vivobook X515EA-EJ062T (Core i3-1115G4 | 4GB | 512GB | Intel UHD | 15.6-inch FHD | Win 10 | Bạc)" 
+								src="img/LAPTOP/Laptop_Asus_Vivobook_X515EA-EJ062T.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Laptop Asus Vivobook X515EA-EJ062T...</a><br/><br/>
+							<span class="giamgia"><s>13.490.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">12.490.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Laptop ASUS ZenBook UX325EA EG079T"
+								src="img/LAPTOP/Laptop_ASUS_ZenBook_UX325EA_EG079T.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Laptop ASUS ZenBook UX325EA EG079T</a><br/><br/>
+							<span class="giamgia"><s>21.990.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">20.450.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Laptop ASUS TUF Gaming F15 FX506LH-HN002T (i5-10300H | 8GB | 512GB | VGA GTX 1650 4GB | 15.6' FHD 144Hz | Win 10)"
+								src="img/LAPTOP/Laptop_ASUS_TUF_Gaming_F15_FX506LH_HN002T.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Laptop ASUS TUF Gaming F15 FX50...</a><br/><br/>
+							<span class="giamgia"><s>20.490.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">19.490.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Màn hình thông minh Samsung LS32AM700UEXXV 32 inch 4K"
+								src="img/MANHINH/Samsung_LS32AM700UEXXV_32.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Màn hình thông minh Samsung LS32AM7...</a><br/><br/>
+							<span class="giamgia"><s>10.990.000₫</s></span>
+							<br/>
+							<div class="gia"><span class=" class="product-price"product-price">9.990.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Màn hình máy tính Dell Monitor S2421HN 23.8 Wide LED, Full HD 1920 x 1080, 2 x HDMI 1.4, 1 x 3.5mm Audio Out" 
+								src="img/MANHINH/Dell_Monitor_S2421HN_23.8_Wide_LED.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Màn hình máy tính Dell Monitor S2...</a><br/><br/>
+							<span class="giamgia"><s>3.908.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">3.750.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Màn hình LCD LG 29 inch Ultrawide 29WN600-W.ATV (2560 x 1080/IPS/75Hz"
+								src="img/MANHINH/LG_29_inch_Ultrawide_29WN600-W.ATV.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Màn hình LCD LG 29 inch Ultrawide...</a><br/><br/>
+							<span class="giamgia"><s>6.490.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">5.990.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Màn hình máy tính ASUS ProArt PA278QV 27 inch 2K IPS - Chuyên đồ họa"
+								src="img/MANHINH/ASUS_ProArt_PA278QV_27.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Màn hình máy tính ASUS ProArt...</a><br/><br/>
+							<span class="giamgia"><s>9.490.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">8.490.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Tản Nhiệt Khí CoolerMaster Hyper 212 Spectrum"
+								 src="img/LINHKIEN/Cooler_Master_Hyper_212.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Tản Nhiệt Khí CoolerMaster...</a><br/><br/>
+							<span class="giamgia"><s>890.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">790.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="RAM PNY XLR8 Gaming 8GB (1x8GB) DDR4 3200MHz" 
+								src="img/LINHKIEN/RAM_PNY_XLR8_GAMING.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] RAM PNY XLR8 Gaming 8GB (...</a><br/><br/>
+							<span class="giamgia"><s>1.390.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">1.090.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="SSD Samsung 970 Evo Plus 500G M.2 NVMe 500GB"
+								src="img/LINHKIEN/SSD_Samsung_970_Evo_Plus.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] SSD Samsung 970 Evo Plu...</a><br/><br/>
+							<span class="giamgia"><s>3.690.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">2.690.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="GIGABYTE Z490 AORUS ELITE (rev. 1.0)"
+								src="img/LINHKIEN/GIGABYTE_Z490_AORUS_ELITE.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] GIGABYTE Z490 AORUS ELIt...</a><br/><br/>
+							<span class="giamgia"><s>6.190.000₫</s></span>
+							<br/>
+							<div class="gia"><span  class="product-price"class="product-price">5.890.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Tản Nhiệt Khí CoolerMaster Hyper 212 Spectrum"
+								 src="img/LINHKIEN/Cooler_Master_Hyper_212.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Tản Nhiệt Khí CoolerMaster...</a><br/><br/>
+							<span class="giamgia"><s>890.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">790.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="RAM PNY XLR8 Gaming 8GB (1x8GB) DDR4 3200MHz" 
+								src="img/LINHKIEN/RAM_PNY_XLR8_GAMING.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] RAM PNY XLR8 Gaming 8GB (...</a><br/><br/>
+							<span class="giamgia"><s>1.390.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">1.090.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="SSD Samsung 970 Evo Plus 500G M.2 NVMe 500GB"
+								src="img/LINHKIEN/SSD_Samsung_970_Evo_Plus.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] SSD Samsung 970 Evo Plu...</a><br/><br/>
+							<span class="giamgia"><s>3.690.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">2.690.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="GIGABYTE Z490 AORUS ELITE (rev. 1.0)"
+								src="img/LINHKIEN/GIGABYTE_Z490_AORUS_ELITE.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] GIGABYTE Z490 AORUS ELIt...</a><br/><br/>
+							<span class="giamgia"><s>6.190.000₫</s></span>
+							<br/>
+							<div class="gia"><span  class="product-price"class="product-price">5.890.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Capture Card AVerMedia Live Gamer 4K GC573"
+								 src="img/PHUKIEN/AVerMedia_Live_Gamer.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Capture Card AVerMedia Live Ga...</a><br/><br/>
+							<span class="giamgia"><s>6.490.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">5.490.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Cổng chuyển HYPERDRIVE DUO 7-IN-2 HDMI 4K60HZ WITH CABLE USB-C HUB - HD28C" 
+								src="img/PHUKIEN/HYPERDRIVE_DUO_7-IN-2.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Cổng chuyển HYPERDRIVE DUO 7-IN...</a><br/><br/>
+							<span class="giamgia"><s>2.700.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">2.000.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Khay lắp ổ cứng SSD cho laptop qua khay CD (Loại mỏng)"
+								src="img/PHUKIEN/Khay_Lap_O_Cung_SSD.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Khay lắp ổ cứng SSD cho laptop...</a><br/><br/>
+							<span class="giamgia"><s>199.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">149.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Sạc Laptop Dell 19.5V-4.62A 90W Chân kim to, củ hình chữ nhật"
+								src="img/PHUKIEN/Sac_Laptop_Dell_19.5V.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Sạc Laptop Dell 19.5V-4.62...</a><br/><br/>
+							<span class="giamgia"><s>300.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">239.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Tản Nhiệt Khí CoolerMaster Hyper 212 Spectrum"
+								 src="img/LINHKIEN/Cooler_Master_Hyper_212.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Tản Nhiệt Khí CoolerMaster...</a><br/><br/>
+							<span class="giamgia"><s>890.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">790.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="RAM PNY XLR8 Gaming 8GB (1x8GB) DDR4 3200MHz" 
+								src="img/LINHKIEN/RAM_PNY_XLR8_GAMING.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] RAM PNY XLR8 Gaming 8GB (...</a><br/><br/>
+							<span class="giamgia"><s>1.390.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">1.090.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="SSD Samsung 970 Evo Plus 500G M.2 NVMe 500GB"
+								src="img/LINHKIEN/SSD_Samsung_970_Evo_Plus.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] SSD Samsung 970 Evo Plu...</a><br/><br/>
+							<span class="giamgia"><s>3.690.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">2.690.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="GIGABYTE Z490 AORUS ELITE (rev. 1.0)"
+								src="img/LINHKIEN/GIGABYTE_Z490_AORUS_ELITE.png"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] GIGABYTE Z490 AORUS ELIt...</a><br/><br/>
+							<span class="giamgia"><s>6.190.000₫</s></span>
+							<br/>
+							<div class="gia"><span  class="product-price"class="product-price">5.890.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Bàn phím cơ E-DRA EK3104 Huano Red switch Version 2021"
+								 src="img/GAMING_GEAR/E-DRA_EK3104.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Bàn phím cơ E-DRA EK3104 Huan...</a><br/><br/>
+							<span class="giamgia"><s>1.000.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">890.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Chuột Logitech G304 LIGHTSPEED Wireless" 
+								src="img/GAMING_GEAR/Logitech_G304.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Chuột Logitech G304 LIGH...</a><br/><br/>
+							<span class="giamgia"><s>850.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">750.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Bàn phím cơ DareU EK145 Brown Switch"
+								src="img/GAMING_GEAR/DareU_EK145.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Bàn phím cơ DareU EK145 B...</a><br/><br/>
+							<span class="giamgia"><s>650.000₫₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">550.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Tai Nghe Gaming DareU EH722s Đen"
+								src="img/GAMING_GEAR/DareU_EH722s.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Tai Nghe Gaming DareU E...</a><br/><br/>
+							<span class="giamgia"><s>699.500₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">650.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Capture Card AVerMedia Live Gamer 4K GC573"
+								 src="img/PHUKIEN/AVerMedia_Live_Gamer.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Capture Card AVerMedia Live Ga...</a><br/><br/>
+							<span class="giamgia"><s>6.490.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">5.490.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Cổng chuyển HYPERDRIVE DUO 7-IN-2 HDMI 4K60HZ WITH CABLE USB-C HUB - HD28C" 
+								src="img/PHUKIEN/HYPERDRIVE_DUO_7-IN-2.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Cổng chuyển HYPERDRIVE DUO 7-IN...</a><br/><br/>
+							<span class="giamgia"><s>2.700.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">2.000.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Khay lắp ổ cứng SSD cho laptop qua khay CD (Loại mỏng)"
+								src="img/PHUKIEN/Khay_Lap_O_Cung_SSD.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Khay lắp ổ cứng SSD cho laptop...</a><br/><br/>
+							<span class="giamgia"><s>199.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">149.000₫</span></div>
+						</div>
+					</div>
+					<div class="col-s-6 col-m-4 col-x-3">
+						<div class="item">
+							<br/>
+							<img class="pic_item" title="Sạc Laptop Dell 19.5V-4.62A 90W Chân kim to, củ hình chữ nhật"
+								src="img/PHUKIEN/Sac_Laptop_Dell_19.5V.jpg"/> <br/><br/>
+							<a class="product-name"href="#">[New 100%] Sạc Laptop Dell 19.5V-4.62...</a><br/><br/>
+							<span class="giamgia"><s>300.000₫</s></span>
+							<br/>
+							<div class="gia"><span class="product-price">239.000₫</span></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="page">
+                    <button style="color: white; background-color: #ff9300">1</button>
+                    <a href="banhangonl2.html"><button>2</button></a>
+                    <a href="banhangonl2.html"><button>></button></a>
+                </div>	
+			</div>
+		</div>
+			
+		</div>
+		
+		
+		<div class="clear"></div>
+		<div id="footer">
+			<div id="fo-content">
+				
+				<div id="chinhsach">
+					<h1>THÔNG TIN CHÍNH SÁCH</h1>
+					<hr/>
+					<ul>	
+						<li><a href="#">Thông tin về hóa đơn mua hàng</a></li>	
+						<li><a href="#">Chính sách về bóc hộp SP Apple</a></li>	
+						<li><a href="#">Chính sách bảo mật thông tin</a></li>							
+						<li><a href="#">Chính sách giao hàng</a></li>
+						<li><a href="#">Chính sách Bảo hành</a></li>	
+						<li><a href="#">Chính sách bảo mật thông tin</a></li>
+						<li><a href="#">Chính sách đổi trả</a></li>	
+						<li><a href="#">Chính sách CSKH</a></li>	
+						<li><a href="#">Chính sách hoàn tiền</a></li>
+						<li><a href="#">Chính sách Trả tiền khi nhận hàng</a></li>	
+						<li><a href="#">Chính sách Xem hàng khi nhận</a></li>	
+					</ul>
+				</div>
+				
+				<div id="contact">
+					<h1>KẾT NỐI VỚI DANYLAP NÈ!</h1>
+					<hr/>
+					<a class="social-icons" target="_blank" href="https://www.youtube.com/@D_awryn">
+						<img src="img/social/ytb.png" alt="DanyLab Youtube Chanel"> <span>Follow Youtube Chanel DanyLab</span>
+					</a>
+					<a class="social-icons" target="_blank" href="https://www.facebook.com/toladatdo">
+						<img src="img/social/fb.png" alt="DanyLab Fanpage"> <span>Follow Facebook Fanpage DanyLab</span>
+					</a>
+					<a class="social-icons" target="_blank" href="https://www.instagram.com/d_awryn/">
+						<img src="img/social/ig.png" alt="DanyLab Instagram"> <span>Follow Instagram DanyLab</span>
+					</a>
+					<a class="social-icons" target="_blank" href="https://www.tiktok.com/@ddany.jr">
+						<img src="img/social/tt.png" alt="DanyLab TikTok"> <span>Follow Tiktok DanyLab</span>
+					</a>
+					
+					<h3 style="padding: 0;margin: 0; color: white">Tải ngay Dmember: Tích điểm & sử dụng ưu đãi</h3>
+					<a class="app-download"target="_blank" href="https://play.google.com/store/apps/details?id=vn.com.cellphones.android.smember"><img id="chplay" src="https://cdn2.cellphones.com.vn/200x,webp/media/wysiwyg/downloadANDROID.png" alt="Tải app từ Google Play"></a>				
+					<a class="app-download"target="_blank" href="https://apps.apple.com/vn/app/smember/id6502395577?l=vi"><img id="appst" src="https://cdn2.cellphones.com.vn/200x,webp/media/wysiwyg/downloadiOS.png" alt="Tải app từ App Store"></a>	
+				</div>
+				
+				
+				
+				<div id="support">
+					<h1>ĐĂNG KÝ NHẬN KHUYẾN MÃI</h1>
+					<hr/>
+					<p><b>(*) Nhận ngay voucher 10%</b><br/>*Voucher sẽ được gửi sau 24h, chỉ áp dụng cho khách hàng mới.</p>
+					<form>
+						<input id="ipt1" type="email" placeholder="Email" /><br />
+						<input id="ipt2" type="tel" pattern="^\d{10}" required placeholder="Số điện thoại*"/><br />
+						<input id="ipt3" type="checkbox" checked="checked" disabled="disabled">
+							<a id="ipt3_a" href="dieukhoan.html">Tôi đồng ý với các điều khoản</a>
+						</input>
+						<br/>
+						<input id="ipt4" type="submit" value="ĐĂNG KÝ NGAY"/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
